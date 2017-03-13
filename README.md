@@ -1,0 +1,3 @@
+# chickensms
+Arduino code for reporting on my chooks
+Documentation ot come....
