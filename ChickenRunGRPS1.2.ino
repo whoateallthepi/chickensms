@@ -25,13 +25,6 @@
 #define SIGNALS 5 //Number of entries in dB table
 #define VOLTAGES 10 //Number of entries in voltages table 
 
-char marginal[9] = "marginal";
-char ok[3] = "ok";
-char good[5] = "good";
-char excellent[10] = "excellent";
-char nosignal[10] = "no signal";
-char unknown[2] = "?";
-
 struct signallevel { int db;
                      const char *human; };
                      
@@ -481,38 +474,6 @@ int batteryLevel (float voltage) {
   }
   return 0;
   
-  /*if (voltage >= 12.73){
-    return 100;
-  }
-  if (voltage >= 12.62){
-    return 90;
-  }
-  if (voltage >= 12.50){
-    return 80;
-  }
-  if (voltage >= 12.37){
-    return 70;
-  }
-  if (voltage >= 12.24){
-    return 60;
-  }
-  if (voltage >= 12.10){
-    return 50;
-  }
-  if (voltage >= 11.96){
-    return 40;
-  }
-  if (voltage >= 11.81){
-    return 30;
-  }
-  if (voltage >= 11.66){
-    return 20;
-  }
-  if (voltage >= 11.51){
-    return 10;
-  }
-  return 0;
-  */
 }
 int getSignalLevel () {
   // really should do this with pointers....
